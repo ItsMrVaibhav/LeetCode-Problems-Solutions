@@ -6,6 +6,8 @@ class Solution {
             return dividend;
         } else if (divisor == -1) {
             return -dividend;
+        } else if (divisor == -2147483648) {
+            return dividend == -2147483648 ? 1 : 0;
         }
         
         long longDividend = (long) dividend;
